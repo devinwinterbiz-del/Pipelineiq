@@ -22,7 +22,7 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
 
 /* KEY SCREEN */
 #keyScreen{display:flex;align-items:center;justify-content:center;min-height:100vh;padding:24px;}
-.key-card{background:var(--white);border-radius:24px;padding:48px;max-width:500px;width:100%;box-shadow:0 4px 6px -1px rgba(0,0,0,0.07),0 20px 60px -10px rgba(59,91,219,0.15);}
+.key-card{background:var(--white);border-radius:24px;padding:48px;max-width:520px;width:100%;box-shadow:0 4px 6px -1px rgba(0,0,0,0.07),0 20px 60px -10px rgba(59,91,219,0.15);}
 .key-logo{font-family:'Cabinet Grotesk',sans-serif;font-weight:900;font-size:2rem;margin-bottom:4px;}
 .key-logo span{color:var(--blue);}
 .key-tagline{font-size:0.9rem;color:var(--muted);margin-bottom:32px;}
@@ -73,13 +73,9 @@ textarea{resize:vertical;min-height:56px;line-height:1.5;}
 .badge-dormant{background:var(--orange-light);color:var(--orange);}
 .rm-btn{background:none;border:none;color:var(--light);cursor:pointer;font-size:1.1rem;padding:2px 4px;line-height:1;transition:color 0.15s;}
 .rm-btn:hover{color:var(--red);}
-
-/* COMPANY PROFILE PANEL */
 .profile-panel{background:var(--blue-light);border:1.5px solid var(--blue-mid);border-radius:12px;padding:14px;}
 .profile-panel .sec-label{color:var(--blue);margin-bottom:10px;}
 .profile-saved{font-size:0.72rem;color:var(--green);font-weight:600;display:none;margin-top:6px;}
-
-/* BRIEF TABS */
 .brief-tabs{display:grid;grid-template-columns:1fr 1fr;gap:6px;}
 .ttab{background:var(--bg);border:2px solid var(--border);border-radius:10px;color:var(--muted);cursor:pointer;font-family:'Satoshi',sans-serif;font-size:0.82rem;font-weight:600;padding:9px;text-align:center;transition:all 0.15s;}
 .ttab:hover{border-color:var(--blue-mid);color:var(--blue);}
@@ -88,8 +84,6 @@ textarea{resize:vertical;min-height:56px;line-height:1.5;}
 .gen-btn:hover{transform:translateY(-2px);box-shadow:0 8px 25px rgba(59,91,219,0.4);}
 .gen-btn:disabled{opacity:0.5;cursor:not-allowed;transform:none;box-shadow:none;}
 .divider{border:none;border-top:1px solid var(--border);}
-
-/* CONTENT STATES */
 .empty-state{display:flex;flex-direction:column;align-items:center;justify-content:center;height:65vh;gap:16px;text-align:center;}
 .empty-icon{font-size:56px;}
 .empty-state h2{font-family:'Cabinet Grotesk',sans-serif;font-size:1.5rem;font-weight:800;}
@@ -99,8 +93,6 @@ textarea{resize:vertical;min-height:56px;line-height:1.5;}
 @keyframes spin{to{transform:rotate(360deg)}}
 .loading-title{font-family:'Cabinet Grotesk',sans-serif;font-size:1.1rem;font-weight:800;}
 .loading-sub{font-size:0.85rem;color:var(--muted);text-align:center;max-width:280px;line-height:1.6;}
-
-/* BRIEF */
 .brief-top{display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:24px;gap:20px;}
 .brief-title{font-family:'Cabinet Grotesk',sans-serif;font-size:1.8rem;font-weight:900;line-height:1.1;}
 .brief-title span{color:var(--blue);}
@@ -110,8 +102,6 @@ textarea{resize:vertical;min-height:56px;line-height:1.5;}
 .stat{background:var(--white);border:1.5px solid var(--border);border-radius:14px;padding:14px 20px;display:flex;flex-direction:column;gap:2px;box-shadow:0 2px 8px rgba(0,0,0,0.04);}
 .stat-val{font-family:'Cabinet Grotesk',sans-serif;font-size:1.6rem;font-weight:900;color:var(--blue);}
 .stat-lbl{font-size:0.72rem;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:0.5px;}
-
-/* ACCOUNT CARDS */
 .acc-card{background:var(--white);border:1.5px solid var(--border);border-radius:16px;margin-bottom:16px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,0.04);animation:fadeUp 0.4s ease both;transition:box-shadow 0.2s,border-color 0.2s;}
 .acc-card:hover{box-shadow:0 4px 20px rgba(59,91,219,0.1);border-color:var(--blue-mid);}
 @keyframes fadeUp{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
@@ -128,8 +118,6 @@ textarea{resize:vertical;min-height:56px;line-height:1.5;}
 .chevron.open{transform:rotate(180deg);}
 .acc-body{padding:20px;display:flex;flex-direction:column;gap:18px;}
 .sig-reason{font-size:0.82rem;color:var(--muted);font-style:italic;background:var(--bg);padding:10px 14px;border-radius:8px;border-left:3px solid var(--blue-mid);}
-
-/* NEWS ITEMS — expandable */
 .news-grid{display:flex;flex-direction:column;gap:8px;}
 .news-item{background:var(--bg);border-radius:10px;border-left:3px solid var(--green);overflow:hidden;}
 .news-item-header{display:flex;align-items:flex-start;gap:10px;padding:12px 14px;cursor:pointer;transition:background 0.15s;}
@@ -137,13 +125,11 @@ textarea{resize:vertical;min-height:56px;line-height:1.5;}
 .news-toggle{color:var(--green);font-size:0.75rem;font-weight:700;flex-shrink:0;margin-top:2px;transition:transform 0.2s;user-select:none;}
 .news-toggle.open{transform:rotate(90deg);}
 .news-headline{font-size:0.84rem;line-height:1.55;color:var(--text);font-weight:600;flex:1;}
-.news-expand{display:none;padding:0 14px 14px 34px;border-top:1px solid var(--border);}
+.news-expand{display:none;padding:0 14px 14px 34px;}
 .news-expand.open{display:block;}
 .news-detail{font-size:0.82rem;line-height:1.65;color:var(--muted);margin-top:10px;}
 .news-link{display:inline-flex;align-items:center;gap:5px;margin-top:10px;font-size:0.78rem;font-weight:700;color:var(--blue);text-decoration:none;background:var(--blue-light);padding:5px 12px;border-radius:20px;transition:all 0.15s;}
 .news-link:hover{background:var(--blue);color:#fff;}
-
-/* OUTREACH */
 .outreach-tabs{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px;}
 .otab{background:var(--bg);border:1.5px solid var(--border);border-radius:20px;color:var(--muted);cursor:pointer;font-family:'Satoshi',sans-serif;font-size:0.75rem;font-weight:600;padding:5px 13px;transition:all 0.15s;}
 .otab:hover{border-color:var(--blue);color:var(--blue);}
@@ -175,18 +161,15 @@ textarea{resize:vertical;min-height:56px;line-height:1.5;}
   <div class="key-card">
     <div class="key-logo">Pipeline<span>IQ</span></div>
     <div class="key-tagline">Your B2B sales intelligence command center</div>
-    <div class="key-steps">
-      <div class="key-step"><span class="step-num">1</span><span>Go to <a href="https://console.anthropic.com" target="_blank">console.anthropic.com</a> → sign up free</span></div>
-      <div class="key-step"><span class="step-num">2</span><span>Click <strong>API Keys</strong> → <strong>Create Key</strong> → copy it</span></div>
-      <div class="key-step"><span class="step-num">3</span><span>Paste your key below — saved in your browser forever</span></div>
+    <div style="margin:32px 0 8px;">
+      <label style="font-size:0.82rem;font-weight:600;color:#495057;margin-bottom:8px;display:block;">Enter your API key to get started</label>
+      <div class="key-input-wrap">
+        <input class="key-input" type="password" id="keyInput" placeholder="sk-..." />
+        <button class="key-btn" onclick="saveKey()">Let's go →</button>
+      </div>
+      <div class="key-error" id="keyError">Invalid API key — double check and try again</div>
     </div>
-    <label style="font-size:0.82rem;font-weight:600;color:#495057;margin-bottom:6px;display:block;">Your Anthropic API Key</label>
-    <div class="key-input-wrap">
-      <input class="key-input" type="password" id="keyInput" placeholder="sk-ant-api03-..." />
-      <button class="key-btn" onclick="saveKey()">Let's go →</button>
-    </div>
-    <div class="key-error" id="keyError">Please enter a valid API key (starts with sk-ant- or sk-)</div>
-    <div class="key-note">🔒 Your key never leaves your browser. Share this link with colleagues — each person enters the key once and it's remembered.</div>
+    <div class="key-note">🔒 Your key is saved only in your browser and never shared anywhere else.</div>
   </div>
 </div>
 
@@ -195,7 +178,7 @@ textarea{resize:vertical;min-height:56px;line-height:1.5;}
   <header>
     <div class="logo">Pipeline<span>IQ</span></div>
     <div class="header-right">
-      <span class="api-badge">● Connected</span>
+      <span class="api-badge">● Connected via OpenAI</span>
       <button class="reset-btn" onclick="resetKey()">Change Key</button>
     </div>
   </header>
@@ -203,7 +186,6 @@ textarea{resize:vertical;min-height:56px;line-height:1.5;}
   <div class="main">
     <div class="sidebar">
 
-      <!-- YOUR INFO -->
       <div>
         <div class="sec-label">Your Info</div>
         <div style="display:flex;flex-direction:column;gap:8px;">
@@ -214,21 +196,19 @@ textarea{resize:vertical;min-height:56px;line-height:1.5;}
 
       <hr class="divider">
 
-      <!-- COMPANY PROFILE -->
       <div class="profile-panel">
         <div class="sec-label">🏢 Your Company Profile</div>
         <div style="display:flex;flex-direction:column;gap:8px;">
           <div><label>Company Name</label><input type="text" id="companyName" placeholder="e.g. Acme Corp" oninput="saveProfile()" /></div>
           <div><label>What your company does</label><textarea id="companyDesc" placeholder="e.g. We provide cloud-based HR software for mid-market companies..." oninput="saveProfile()"></textarea></div>
-          <div><label>What you specialize in / sell</label><textarea id="companySpecialty" placeholder="e.g. We specialize in payroll automation, benefits management, and workforce analytics..." oninput="saveProfile()"></textarea></div>
-          <div><label>Target customer / ideal fit</label><input type="text" id="companyTarget" placeholder="e.g. HR leaders at 200-2000 employee companies" oninput="saveProfile()" /></div>
+          <div><label>What you specialize in / sell</label><textarea id="companySpecialty" placeholder="e.g. Payroll automation, benefits management, workforce analytics..." oninput="saveProfile()"></textarea></div>
+          <div><label>Your ideal customer</label><input type="text" id="companyTarget" placeholder="e.g. HR leaders at 200-2000 employee companies" oninput="saveProfile()" /></div>
         </div>
         <div class="profile-saved" id="profileSaved">✓ Profile saved</div>
       </div>
 
       <hr class="divider">
 
-      <!-- ADD ACCOUNT -->
       <div>
         <div class="sec-label">Add Account</div>
         <div style="display:flex;flex-direction:column;gap:8px;">
@@ -251,7 +231,6 @@ textarea{resize:vertical;min-height:56px;line-height:1.5;}
         </div>
       </div>
 
-      <!-- ACCOUNT LIST -->
       <div style="flex:1;min-height:0;display:flex;flex-direction:column;">
         <div class="sec-label">My Accounts (<span id="accCount">0</span>) <span style="font-size:0.6rem;color:var(--green);font-weight:700;">● AUTO-SAVED</span></div>
         <div class="acc-list" id="accList"><p style="font-size:0.8rem;color:var(--light);text-align:center;padding:16px 0;">No accounts yet</p></div>
@@ -259,7 +238,6 @@ textarea{resize:vertical;min-height:56px;line-height:1.5;}
 
       <hr class="divider">
 
-      <!-- BRIEF TYPE -->
       <div>
         <div class="sec-label">Brief Type</div>
         <div class="brief-tabs">
@@ -272,7 +250,6 @@ textarea{resize:vertical;min-height:56px;line-height:1.5;}
 
     </div>
 
-    <!-- CONTENT -->
     <div class="content" id="content">
       <div class="empty-state">
         <div class="empty-icon">🚀</div>
@@ -285,7 +262,7 @@ textarea{resize:vertical;min-height:56px;line-height:1.5;}
 
 </div>
 <script>
-const KEY_STORE='piq_key', ACC_STORE='piq_accounts', PRO_STORE='piq_profile';
+const KEY_STORE='piq_oai_key', ACC_STORE='piq_accounts', PRO_STORE='piq_profile';
 let accounts=[], briefType='weekly';
 
 function init(){
@@ -298,8 +275,10 @@ function showApp(){document.getElementById('keyScreen').style.display='none';doc
 function saveKey(){
   const v=document.getElementById('keyInput').value.trim();
   const err=document.getElementById('keyError');
-  if(!v.startsWith('sk-ant-')&&!v.startsWith('sk-')){err.style.display='block';return;}
-  err.style.display='none';localStorage.setItem(KEY_STORE,v);showApp();
+  if(!v.startsWith('sk-')){err.style.display='block';return;}
+  err.style.display='none';
+  localStorage.setItem(KEY_STORE,v);
+  showApp();
 }
 function resetKey(){if(confirm('Remove your saved API key?')){localStorage.removeItem(KEY_STORE);showKeyScreen();}}
 document.getElementById('keyInput').addEventListener('keydown',e=>{if(e.key==='Enter')saveKey();});
@@ -351,7 +330,6 @@ function addAccount(){
   document.getElementById('genBtn').disabled=false;
 }
 document.getElementById('accName').addEventListener('keydown',e=>{if(e.key==='Enter')addAccount();});
-
 function removeAccount(id){accounts=accounts.filter(a=>a.id!==id);saveAccounts();renderAccounts();if(!accounts.length)document.getElementById('genBtn').disabled=true;}
 
 const tLabels={target:'Target',cold:'Cold',followup:'Follow-Up',dormant:'Re-engage'};
@@ -376,19 +354,19 @@ async function generate(){
   content.innerHTML=`<div class="loading-state"><div class="spinner"></div><div class="loading-title">Scanning your accounts...</div><div class="loading-sub">Researching ${accounts.length} account${accounts.length>1?'s':''}, finding signals, writing personalized outreach. About 30–60 seconds.</div></div>`;
 
   const p=JSON.parse(localStorage.getItem(PRO_STORE)||'{}');
-  const userName=document.getElementById('userName').value.trim()||'the sales rep';
-  const userRole=document.getElementById('userRole').value.trim()||'Account Executive';
+  const userName=p.name||'the sales rep';
+  const userRole=p.role||'Account Executive';
   const today=new Date().toLocaleDateString('en-US',{weekday:'long',year:'numeric',month:'long',day:'numeric'});
   const accsText=accounts.map(a=>`- Company: ${a.name}\n  Contact: ${a.contact||'unknown'}\n  Type: ${tLabels[a.type]}\n  Context: ${a.ctx||'none'}`).join('\n');
 
-  const companyContext = p.companyName ? `
-SALES REP'S COMPANY PROFILE (use this to curate all outreach emails):
+  const companyContext=p.companyName?`
+SALES REP'S COMPANY PROFILE — use this to curate all outreach emails:
 - Company: ${p.companyName}
 - What we do: ${p.companyDesc||'not specified'}
 - What we specialize in / sell: ${p.companySpecialty||'not specified'}
 - Our ideal customer: ${p.companyTarget||'not specified'}
 
-All outreach emails must be written from the perspective of ${userName} at ${p.companyName}, referencing how ${p.companyName}'s specific offerings are relevant to each account's news and situation.` : '';
+All outreach emails must be written from the perspective of ${userName} at ${p.companyName}, referencing how ${p.companyName}'s specific offerings relate to each account's news and situation.`:'';
 
   const prompt=`You are a B2B sales intelligence assistant. Today is ${today}.
 Sales rep: ${userName} (${userRole}). Brief type: ${briefType}.
@@ -399,27 +377,50 @@ ${accsText}
 
 For EACH account:
 1. Surface 3 realistic, specific news signals (hiring trends, product launches, leadership changes, earnings, expansions, funding, industry headwinds)
-2. For each signal, provide: a headline, a 2-3 sentence deeper explanation, and a realistic article URL (use real news domains like wsj.com, techcrunch.com, bloomberg.com, reuters.com etc — make the URL look realistic even if approximate)
+2. For each signal provide: a short headline, a 2-3 sentence deeper explanation, and a realistic article URL (use real news domains like wsj.com, techcrunch.com, bloomberg.com, reuters.com)
 3. Generate 4 outreach emails curated to the sales rep's company and what they sell
 
-Respond ONLY in valid JSON, no markdown:
-{"summary":"2-sentence overview","hotAccounts":0,"totalSignals":0,"outreachReady":0,"accounts":[{"name":"","signal":"hot|warm|cool","signalReason":"1 sentence","news":[{"headline":"short headline","detail":"2-3 sentence deeper explanation of what happened and why it matters","url":"https://realdomain.com/article-path"}],"outreach":{"newsHook":{"subject":"","body":"3-4 paragraphs referencing specific news and how your company can help. Newlines between paragraphs."},"coldOpen":{"subject":"","body":"2-3 tight paragraphs, pattern interrupt opener"},"followUp":{"subject":"","body":"brief follow up adding new value"},"reEngage":{"subject":"","body":"re-engagement referencing time gap"}}}]}`;
+Respond ONLY in valid JSON, no markdown, no code fences:
+{"summary":"2-sentence overview","hotAccounts":0,"totalSignals":0,"outreachReady":0,"accounts":[{"name":"","signal":"hot|warm|cool","signalReason":"1 sentence","news":[{"headline":"short headline","detail":"2-3 sentence deeper explanation","url":"https://domain.com/article"}],"outreach":{"newsHook":{"subject":"","body":"3-4 paragraphs with newlines between them"},"coldOpen":{"subject":"","body":"2-3 paragraphs"},"followUp":{"subject":"","body":"brief strategic follow up"},"reEngage":{"subject":"","body":"re-engagement email"}}}]}`;
 
   try{
-    const res=await fetch('https://api.anthropic.com/v1/messages',{method:'POST',headers:{'Content-Type':'application/json','x-api-key':apiKey,'anthropic-version':'2023-06-01','anthropic-dangerous-direct-browser-access':'true'},body:JSON.stringify({model:'claude-opus-4-5',max_tokens:8000,messages:[{role:'user',content:prompt}]})});
-    if(!res.ok){const e=await res.json();throw new Error(e.error?.message||`API error ${res.status}`);}
+    // ── OpenAI API call ──
+    const res=await fetch('https://api.openai.com/v1/chat/completions',{
+      method:'POST',
+      headers:{
+        'Content-Type':'application/json',
+        'Authorization':`Bearer ${apiKey}`
+      },
+      body:JSON.stringify({
+        model:'gpt-4o',
+        max_tokens:8000,
+        response_format:{type:'json_object'},
+        messages:[
+          {role:'system',content:'You are a B2B sales intelligence assistant. Always respond with valid JSON only.'},
+          {role:'user',content:prompt}
+        ]
+      })
+    });
+
+    if(!res.ok){
+      const e=await res.json();
+      throw new Error(e.error?.message||`API error ${res.status}`);
+    }
+
     const data=await res.json();
-    let raw=(data.content||[]).filter(b=>b.type==='text').map(b=>b.text).join('');
-    raw=raw.replace(/```json|```/g,'').trim();
+    const raw=data.choices?.[0]?.message?.content||'';
     const s=raw.indexOf('{'),e=raw.lastIndexOf('}');
     if(s===-1||e===-1)throw new Error('Could not parse response. Please try again.');
     renderBrief(JSON.parse(raw.substring(s,e+1)),today);
+
   }catch(err){
     let msg=err.message||'Unknown error.';
-    if(msg.includes('401')||msg.includes('invalid_api_key'))msg='Invalid API key. Click "Change Key" and re-enter.';
-    if(msg.includes('429'))msg='Rate limit hit. Wait a minute and try again.';
+    if(msg.includes('401')||msg.includes('Incorrect API key')) msg='Invalid API key. Click "Change Key" and re-enter your OpenAI key.';
+    if(msg.includes('429')) msg='Rate limit or quota reached. Check your OpenAI billing at platform.openai.com.';
+    if(msg.includes('insufficient_quota')) msg='Your OpenAI account needs credits. Visit platform.openai.com/billing to add funds.';
     content.innerHTML=`<div class="err-state"><div style="font-size:2.5rem;">⚠️</div><h2>Something went wrong</h2><p>${msg}</p></div>`;
   }
+
   btn.disabled=false;btn.textContent='⚡ Generate My Brief';
 }
 
@@ -491,7 +492,7 @@ function renderBrief(data,today){
         <div class="brief-date">${today} · ${accounts.length} account${accounts.length!==1?'s':''} tracked</div>
         ${data.summary?`<div class="brief-summary">${data.summary}</div>`:''}
       </div>
-      <button onclick="generate()" style="background:var(--bg);border:1.5px solid var(--border);border-radius:10px;padding:8px 16px;font-family:'Satoshi',sans-serif;font-size:0.82rem;font-weight:600;color:var(--muted);cursor:pointer;white-space:nowrap;flex-shrink:0;transition:all 0.15s;" onmouseover="this.style.borderColor='var(--blue)';this.style.color='var(--blue)'" onmouseout="this.style.borderColor='var(--border)';this.style.color='var(--muted)'">↻ Refresh</button>
+      <button onclick="generate()" style="background:var(--bg);border:1.5px solid var(--border);border-radius:10px;padding:8px 16px;font-family:'Satoshi',sans-serif;font-size:0.82rem;font-weight:600;color:var(--muted);cursor:pointer;white-space:nowrap;flex-shrink:0;" onmouseover="this.style.borderColor='var(--blue)';this.style.color='var(--blue)'" onmouseout="this.style.borderColor='var(--border)';this.style.color='var(--muted)'">↻ Refresh</button>
     </div>
     <div class="stats">
       <div class="stat"><div class="stat-val">${data.hotAccounts??0}</div><div class="stat-lbl">Hot Accounts</div></div>
@@ -503,17 +504,8 @@ function renderBrief(data,today){
 }
 
 function toggleCard(i){const b=document.getElementById(`abody-${i}`);const c=document.getElementById(`chev-${i}`);const h=b.style.display==='none';b.style.display=h?'flex':'none';c.classList.toggle('open',h);}
-
-function toggleNews(id){
-  const expand=document.getElementById(id);
-  const tog=document.getElementById(`tog-${id}`);
-  const isOpen=expand.classList.contains('open');
-  expand.classList.toggle('open',!isOpen);
-  tog.classList.toggle('open',!isOpen);
-}
-
+function toggleNews(id){const expand=document.getElementById(id);const tog=document.getElementById(`tog-${id}`);const isOpen=expand.classList.contains('open');expand.classList.toggle('open',!isOpen);tog.classList.toggle('open',!isOpen);}
 function switchTab(ci,key,el){otypes.forEach(t=>{const p=document.getElementById(`op-${ci}-${t.key}`);if(p)p.style.display='none';});const t=document.getElementById(`op-${ci}-${key}`);if(t)t.style.display='block';el.closest('.outreach-tabs').querySelectorAll('.otab').forEach(x=>x.classList.remove('active'));el.classList.add('active');}
-
 function copyEmail(ci,key){const p=document.getElementById(`op-${ci}-${key}`);if(!p)return;const s=p.querySelector('.email-subj')?.textContent||'';const b=p.querySelector('.email-body')?.textContent||'';navigator.clipboard.writeText(`Subject: ${s}\n\n${b}`).then(()=>{const btn=p.querySelector('.copy-btn');if(btn){btn.textContent='✓ Copied!';setTimeout(()=>{btn.textContent='📋 Copy';},2000);}});}
 
 init();
